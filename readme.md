@@ -12,3 +12,4 @@ HTML5 Labs
 6.Cat Blog Page
 7.Event Hub Page
 8.Hotel Feedback Form
+9. book catalog page
