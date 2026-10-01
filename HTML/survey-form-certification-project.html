@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Survey 2026</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">How Are You Learning to Code?</h1>
+      <p id="description">A quick 2 minute survey to understand how self taught developers and students build their coding habits.</p>
+
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Your Name</label><br>
+          <input 
+            type="text" 
+            id="name" 
+            placeholder="e.g. John Doe" 
+            required
+          >
+        </div>
+        <div>
+          <label id="email-label" for="email">Email Address</label><br>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="name@example.com" 
+            required
+          >
+        </div>
+        <div>
+          <label id="number-label" for="number">Your Age</label><br>
+          <input 
+            type="number" 
+            id="number" 
+            min="12" 
+            max="80" 
+            placeholder="22"
+          >
+        </div>
+        <div>
+          <label for="dropdown">What best describes your current journey?</label><br>
+          <select id="dropdown">
+            <option value="cs-student">University / CS Student</option>
+            <option value="self-taught">Self-taught Learner</option>
+            <option value="bootcamp">Bootcamp / Online Trainee</option>
+            <option value="career-changer">Switching Careers into Tech</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Do you prefer project-based learning over video tutorials?</legend>
+          <label>
+            <input type="radio" name="learning-style" value="yes" checked> Definitely, building projects helps it stick
+          </label><br>
+          <label>
+            <input type="radio" name="learning-style" value="mixed"> A mix of both
+          </label><br>
+          <label>
+            <input type="radio" name="learning-style" value="videos"> Prefer detailed video walk-throughs first
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What technologies are you focusing on this month? (Pick all that apply)</legend>
+          <label>
+            <input type="checkbox" name="focus" value="html-semantics"> HTML5 Semantics & Structure
+          </label><br>
+          <label>
+            <input type="checkbox" name="focus" value="css-layouts"> Modern CSS (Flexbox / Grid)
+          </label><br>
+          <label>
+            <input type="checkbox" name="focus" value="git-workflow"> Git & GitHub Workflows
+          </label><br>
+          <label>
+            <input type="checkbox" name="focus" value="vanilla-js"> Vanilla JavaScript Logic
+          </label>
+        </fieldset>
+        <div>
+          <label for="comments">What has been your biggest struggle while learning so far?</label><br>
+          <textarea 
+            id="comments" 
+            name="comments" 
+            rows="4" 
+            cols="45" 
+            placeholder="Staying consistent, CSS centering, debugging errors, etc..."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit Feedback</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
