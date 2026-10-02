@@ -14,3 +14,4 @@ HTML5 Labs
 8.Hotel Feedback Form
 9.Book catalog page
 10.Survey form certification project
+10.bazaura.pk
