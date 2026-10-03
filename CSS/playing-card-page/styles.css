@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #1b4d3e;
+  font-family: sans-serif;
+}
+
+/* 1. Main container: horizontally centered, wraps, 20px gap */
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 2. Card container: flexbox with space-between */
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  height: 240px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+/* 3. Left corner item aligns at the start */
+.left {
+  align-self: flex-start;
+}
+
+/* 4. Middle section: flex column and aligns in center */
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 2.2rem;
+}
+
+/* 5. Right corner item aligns at the end */
+.right {
+  align-self: flex-end;
+}
+
+.red {
+  color: #d32f2f;
+}
+
+.black {
+  color: #212121;
+}
