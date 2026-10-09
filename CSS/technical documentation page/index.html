@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <!-- Requirement 8: nav element with id="navbar" -->
+    <nav id="navbar">
+        <!-- Requirement 9 & 11: header element inside navbar, before links -->
+        <header>HTML Documentation</header>
+        <ul>
+            <!-- Requirement 10, 12 & 13: a elements with class="nav-link", text matching headers, navigating to IDs -->
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+            <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+            <li><a class="nav-link" href="#HTML_Forms">HTML Forms</a></li>
+            <li><a class="nav-link" href="#CSS_Styling">CSS Styling</a></li>
+        </ul>
+    </nav>
+
+    <!-- Requirement 1: main element with id="main-doc" -->
+    <main id="main-doc">
+        
+        <!-- Requirement 2, 4: section element with class="main-section" and id matching header -->
+        <section class="main-section" id="Introduction">
+            <!-- Requirement 3: header element as first child -->
+            <header>Introduction</header>
+            <!-- Requirement 5: p elements total >= 10 -->
+            <p>HTML stands for Hyper Text Markup Language. It is the standard markup language for creating Web pages and web applications.</p>
+            <p>With HTML you can create your own Website. HTML is very easy to learn, and is the foundation for all modern web development.</p>
+            <p>HTML describes the structure of a Web page semantically and originally included cues for the appearance of the document.</p>
+        </section>
+
+        <!-- Requirement 4: id replaces spaces with underscores -->
+        <section class="main-section" id="HTML_Elements">
+            <header>HTML Elements</header>
+            <p>An HTML element is defined by a start tag, some content, and an end tag. The element encompasses everything from the start tag to the end tag.</p>
+            <!-- Requirement 6: code elements total >= 5 -->
+            <code class="code-block">&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</code>
+            <p>Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+            <!-- Requirement 7: li elements total >= 5 -->
+            <ul>
+                <li>The <code>&lt;h1&gt;</code> element defines a large heading.</li>
+                <li>The <code>&lt;p&gt;</code> element defines a paragraph.</li>
+                <li>The <code>&lt;br&gt;</code> element inserts a single line break.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="HTML_Attributes">
+            <header>HTML Attributes</header>
+            <p>Attributes provide additional information about HTML elements. All HTML elements can have attributes.</p>
+            <p>Attributes are always specified in the start tag and usually come in name/value pairs like: <code>name="value"</code>.</p>
+            <p>The <code>href</code> attribute of the <code>&lt;a&gt;</code> tag specifies the URL of the page the link goes to.</p>
+            <code class="code-block">&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code>
+        </section>
+
+        <section class="main-section" id="HTML_Forms">
+            <header>HTML Forms</header>
+            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+            <p>The <code>&lt;form&gt;</code> element is used to create an HTML form for user input. It can contain various types of input elements, such as text fields, checkboxes, radio buttons, and submit buttons.</p>
+            <ul>
+                <li><code>&lt;input type="text"&gt;</code> defines a single-line text input field.</li>
+                <li><code>&lt;label&gt;</code> defines a label for many form elements.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="CSS_Styling">
+            <header>CSS Styling</header>
+            <p>HTML was originally created to describe the content of a web page, not its presentation.</p>
+            <p>When tags like <code>&lt;font&gt;</code>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites became long and expensive.</p>
+            <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS (Cascading Style Sheets). CSS removed the style formatting from the HTML page, shifting the responsibility to dedicated stylesheets.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

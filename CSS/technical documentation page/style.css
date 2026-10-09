@@ -1,0 +1,139 @@
+ :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --nav-bg: #ffffff;
+            --border-color: #e9ecef;
+            --link-color: #4d4d4e;
+            --link-hover-bg: #e2e6ea;
+            --code-bg: #f1f3f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+
+        /* Requirement 14: Fixed navbar on the left side */
+        #navbar {
+            position: fixed;
+            min-width: 280px;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100%;
+            border-right: 2px solid var(--border-color);
+            background-color: var(--nav-bg);
+            overflow-y: auto;
+        }
+
+        /* Requirement 9, 11: Header inside navbar before links */
+        #navbar header {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 20px;
+            border-bottom: 2px solid var(--border-color);
+            text-align: center;
+        }
+
+        #navbar ul {
+            list-style: none;
+        }
+
+        #navbar li {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Requirement 10, 12: nav-link elements */
+        .nav-link {
+            display: block;
+            padding: 15px 20px;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .nav-link:hover {
+            background-color: var(--link-hover-bg);
+            color: #000;
+        }
+
+        /* Requirement 1: main-doc element */
+        #main-doc {
+            position: absolute;
+            margin-left: 280px; /* Offset for navbar */
+            padding: 30px 40px;
+            margin-bottom: 40px;
+        }
+
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        /* Requirement 3: Header in main-section */
+        .main-section header {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .main-section p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .main-section ul {
+            margin-left: 40px;
+            margin-bottom: 15px;
+        }
+
+        .main-section li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95em;
+            color: #d63384;
+        }
+
+        .code-block {
+            display: block;
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 15px;
+            color: #333;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Requirement 15: Media Query */
+        @media (max-width: 800px) {
+            #navbar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                max-height: 250px;
+                border-right: none;
+                border-bottom: 2px solid var(--border-color);
+            }
+            
+            #main-doc {
+                position: relative;
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
