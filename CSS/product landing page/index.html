@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp - NextGen Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+    <!-- Requirement 1: header element -->
+    <header id="header">
+        <!-- Requirement 2: header-img -->
+        <img id="header-img" src="https://placehold.co/200x50/3b82f6/ffffff?text=TechCorp+Logo" alt="TechCorp Logo">
+        
+        <!-- Requirement 3: nav-bar -->
+        <nav id="nav-bar">
+            <!-- Requirement 4 & 5: nav-link elements -->
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Experience the Future of Tech</h1>
+            <p>Join our newsletter to get early access to our newest gadgets and exclusive discounts.</p>
+            
+            <!-- Requirement 7: form element with action -->
+            <form id="form" action="https://www.freecodecamp.org/email-submit" method="get">
+                <!-- Requirement 8 & 9: email input with validation and placeholder -->
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address" 
+                    required 
+                />
+                <!-- Requirement 10: submit input -->
+                <input type="submit" id="submit" value="Get Started">
+            </form>
+        </div>
+
+        <section id="features">
+            <h2>Premium Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div>
+                        <h3>Lightning Fast</h3>
+                        <p>Our gadgets are equipped with the latest processors ensuring top-tier performance for all your daily tasks.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Designed with sustainable materials, reducing our carbon footprint while delivering premium quality.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div>
+                        <h3>All-Day Battery</h3>
+                        <p>Never worry about finding an outlet again. Our optimized battery life lasts up to 48 hours on a single charge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="video-container">
+                <!-- Requirement 6: Embedded video with id="video" -->
+                <iframe 
+                    id="video" 
+                    src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Simple Pricing</h2>
+            <div class="feature-item" style="justify-content: center; text-align: center; flex-direction: column;">
+                <h3 style="font-size: 1.5rem;">Pro Tier</h3>
+                <h4 style="font-size: 2.5rem; color: #3b82f6;">$99<span style="font-size: 1rem; color: #64748b;">/mo</span></h4>
+                <p>Includes all premium features, 24/7 support, and extended warranty.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
