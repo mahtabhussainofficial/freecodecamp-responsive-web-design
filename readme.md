@@ -1,17 +1,38 @@
-Responsive Web Design Journey
+# Responsive Web Design Projects
 
-Daily Progress Tracker
+This repository contains my practice work and certification projects from the **freeCodeCamp Responsive Web Design** curriculum.
 
-HTML5 Labs
+## About
 
-1.Cat Photo App
-2.Travel Agency Page
-3.Bookstore Page
-4.Audio Video Player
-5.Video Compilation Page
-6.Cat Blog Page
-7.Event Hub Page
-8.Hotel Feedback Form
-9.Book catalog page
-10.Survey form certification project
-10.bazaura.pk
+The goal of this repository is to document my progress while building foundational frontend skills with:
+
+- Semantic HTML
+- Accessibility basics
+- Responsive layouts
+- Project-based learning
+
+## Project Structure
+
+### HTML Practice Projects
+
+- Cat Photo App
+- Travel Agency Page
+- Bookstore Page
+- Audio Video Player
+- Video Compilation Page
+- Cat Blog Page
+- Event Hub Page
+- Hotel Feedback Form
+- Book Catalog Page
+- Survey Form (Certification Project)
+- Bazaura.pk
+
+### Additional Pages
+
+- Product Landing Page (`HTML/product landing page`)
+- Technical Documentation Page (`HTML/technical documentation page`)
+- Playing Card Page (`HTML/playing-card-page`)
+
+## Repository Purpose
+
+This repo serves as a personal learning archive and portfolio of completed exercises from the Responsive Web Design track.
